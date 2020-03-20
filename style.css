@@ -5,11 +5,10 @@ html, body {
 
 body {
   box-sizing: border-box;
-  display: flex;
   font-size: 22px;
   font-family: 'Open Sans', sans-serif;
   width: 100%;
-  padding: 2em;
+  padding: 2em 2em 0 2em;
 }
 
 a {
@@ -33,6 +32,12 @@ a:hover {
 header {
   flex: .89;
   margin-right: 2em;
+}
+
+.main-body {
+  display: flex;
+  height: 100%;
+  min-height: 89vh;
 }
 
 #name {
@@ -74,16 +79,16 @@ header {
   transition: max-height 400ms ease-in;
 }
 
-.main-body {
+img {
+  max-width: 100%;
+  margin-bottom: .2em;
+}
+
+.pictures {
   column-count: 4;
   column-gap: .43em;
   padding: 0;
   flex: 4;
-}
-
-img {
-  max-width: 100%;
-  margin-bottom: .2em;
 }
 
 .pictures img {
@@ -100,7 +105,6 @@ img:hover {
 .contact-body {
   padding: 0;
   flex: 4;
-  margin-top: .3em;
   margin-right: .4em;
   font-size: 1.1em;
   display: flex;
@@ -124,16 +128,18 @@ img:hover {
 
 footer {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   width: 100%;
   font-size: .6em;
-  bottom: .4em;
-  position: fixed;
+  margin: 2.5em 0 .6em 0;
+}
+
+footer a {
+  margin: 0 2em;
 }
 
 @media screen and (max-width: 1281px) {
-  .main-body {
+  .pictures {
     column-count: 3;
   }
 }
@@ -143,7 +149,7 @@ footer {
     font-size: 18px;
   }
 
-  .main-body {
+  .pictures {
     column-count: 2;
   }
 }
@@ -159,7 +165,7 @@ footer {
 }
 
 @media screen and (max-width: 320px) {
-  .main-body {
+  .pictures {
     column-count: 1;
   }
 }
