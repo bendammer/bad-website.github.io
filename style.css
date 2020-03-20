@@ -126,12 +126,21 @@ img:hover {
   margin-bottom: .3em;
 }
 
+.imprint {
+  font-size: .7em;
+  flex: 4;
+}
+
+.imprint h1 {
+  margin-top: 0;
+}
+
 footer {
   display: flex;
   justify-content: center;
   width: 100%;
   font-size: .6em;
-  margin: 2.5em 0 .6em 0;
+  margin: 2.5em 0 1em 0;
 }
 
 footer a {
