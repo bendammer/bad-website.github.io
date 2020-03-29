@@ -281,6 +281,24 @@ footer a {
     transform: rotate(-45deg);
   }
 
+  .contact-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .contact-content h2 {
+    font-size: 1.9em;
+  }
+
   footer {
     margin-bottom: 4em;
   }
@@ -390,6 +408,24 @@ footer a {
 
   .menu-bar .line.rotate-right {
     transform: rotate(-45deg);
+  }
+
+  .contact-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+  }
+
+  .contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .contact-content h2 {
+    font-size: 1.8em;
   }
 
   footer {
