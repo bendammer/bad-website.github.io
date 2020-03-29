@@ -122,7 +122,12 @@ img:hover {
 .contact-content h2{
   display: inline-block;
   padding: 0;
-  margin: 1.3em 0;
+  margin: 0;
+  font-size: 2em;
+}
+
+.contact-content ul {
+  margin: 0;
 }
 
 .contact-content li{
@@ -275,6 +280,10 @@ footer a {
   .menu-bar .line.rotate-right {
     transform: rotate(-45deg);
   }
+
+  footer {
+    margin-bottom: 4em;
+  }
 }
 
 @media screen and (max-width: 481px) {
@@ -381,6 +390,10 @@ footer a {
 
   .menu-bar .line.rotate-right {
     transform: rotate(-45deg);
+  }
+
+  footer {
+    margin-bottom: 4em;
   }
 }
 
