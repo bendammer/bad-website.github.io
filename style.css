@@ -110,27 +110,22 @@ img:hover {
   opacity: .93;
 }
 
-.contact-body {
-  padding: 0;
-  flex: 4;
-  margin-right: .4em;
-  font-size: 1.1em;
+.contact-content {
   display: flex;
+  flex: 4;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  font-size: 1.3em;
 }
 
-#contact-content h2{
+.contact-content h2{
   display: inline-block;
   padding: 0;
   margin: 1.3em 0;
 }
 
-#ben-aaron-dammer {
-  margin-bottom: .4em;
-}
-
-#contact-content li{
+.contact-content li{
   margin-bottom: .3em;
 }
 
