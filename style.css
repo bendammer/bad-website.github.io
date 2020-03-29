@@ -234,8 +234,16 @@ footer a {
     opacity: .98;
   }
 
+  .menu-bar {
+    padding-bottom: 8em;
+  }
+
   .menu-bar li {
     padding-top: 1.5em;
+  }
+
+  .menu-bar ul {
+    padding: 0;
   }
 
   .menu-bar li:first-of-type {
