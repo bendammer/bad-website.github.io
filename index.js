@@ -21,4 +21,5 @@ hamburger.addEventListener('click', () => {
 exitButton.addEventListener('click', () => {
   mobileMenu.style.display = 'none';
   hamburger.style.display = 'block';
+  body.style.overflowY = 'visible';
 })

@@ -110,13 +110,16 @@ img:hover {
   opacity: .93;
 }
 
-.contact-content {
+.contact-body {
   display: flex;
   flex: 4;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  font-size: 1.3em;
+}
+
+.contact-content {
+  font-size: 1.5em;
 }
 
 .contact-content h2{
@@ -178,6 +181,7 @@ footer a {
   }
 
   .main-body {
+    min-height: 70vh;
     padding: 2em 2em 0 2em;
   }
   
@@ -285,22 +289,29 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 78vh;
   }
 
-  .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* .contact-content {
     height: 100%;
-  }
+  } */
 
   .contact-content h2 {
     font-size: 1.9em;
   }
 
   footer {
-    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+  }
+
+  footer a:first-of-type {
+    margin: 0 0 0 20em;
+  }
+
+  footer a:last-of-type {
+    margin: 0 20em 0 0;
   }
 }
 
@@ -414,14 +425,12 @@ footer a {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 85vh;
+    height: 76vh;
   }
 
   .contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+    font-size: 1.2em;
+    height: 70%;
   }
 
   .contact-content h2 {
@@ -429,7 +438,17 @@ footer a {
   }
 
   footer {
-    margin-bottom: 4em;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.4em 0 1.2em 0;
+  }
+
+  footer a:first-of-type {
+    margin: 0 0 0 8em;
+  }
+
+  footer a:last-of-type {
+    margin: 0 8em 0 0;
   }
 }
 
