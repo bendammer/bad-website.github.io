@@ -228,11 +228,11 @@ footer a {
     display: none;
     justify-content: center;
     align-items: center;
-    font-size: 1.8em;
+    font-size: 1.7em;
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #A9A9A9;
     opacity: .98;
