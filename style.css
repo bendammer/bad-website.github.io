@@ -401,7 +401,7 @@ footer a {
   .menu-bar .line {
     position: absolute;
     top: 1.5em;
-    right: 1em;
+    right: .8em;
     height: .15em;
     width: 1.2em;
     background-color: black;
