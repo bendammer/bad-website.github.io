@@ -376,7 +376,7 @@ footer a {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-color: #A9A9A9;
     opacity: .98;
