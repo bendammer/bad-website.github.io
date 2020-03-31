@@ -3,7 +3,6 @@ const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const exitButton = document.querySelector('.exit-button');
 const body = document.querySelector('body');
-const html = document.querySelector('html');
 
 hasDropdown.forEach((element) => {
   element.addEventListener('click', (event) => {
@@ -17,9 +16,6 @@ hamburger.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
   hamburger.style.display = 'none';
   body.style.overflowY = 'hidden';
-  /* body.style.position = 'relative'; */
-  html.style.overflowY = 'hidden';
-  /* html.style.position = 'relative'; */
 });
 
 exitButton.addEventListener('click', () => {
@@ -28,5 +24,6 @@ exitButton.addEventListener('click', () => {
   body.style.overflowY = 'visible';
   const dropdown = document.querySelector('.dropdown-menu');
   dropdown.classList.remove('active');
-  /* html.style.overflowY = 'visible'; */
-})
+});
+
+
