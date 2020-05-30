@@ -3,6 +3,8 @@ const hamburger = document.querySelector('.hamburger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const exitButton = document.querySelector('.exit-button');
 const body = document.querySelector('body');
+const themeButton = document.querySelector('#theme-button');
+const darkTheme = document.querySelector('.dark');
 
 hasDropdown.forEach((element) => {
   element.addEventListener('click', (event) => {
@@ -24,6 +26,10 @@ exitButton.addEventListener('click', () => {
   body.style.overflowY = 'visible';
   const dropdown = document.querySelector('.dropdown-menu');
   dropdown.classList.remove('active');
+});
+
+themeButton.addEventListener('click', () => {
+  body.classList.toggle('dark');
 });
 
 

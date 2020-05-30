@@ -9,6 +9,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   width: 100%;
   padding: 2em 2em 0 2em;
+  transition: background 600ms ease-in-out, color 1200ms ease-in-out;
 }
 
 a {
@@ -38,6 +39,39 @@ header {
   display: flex;
   height: 100%;
   min-height: 89vh;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+
+.dark a {
+  color: white;
+}
+
+.dark a:hover {
+  color: rgb(82,235,59);
+}
+
+.dark .name-tag a:hover {
+  color: white;
+}
+
+.theme {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+}
+
+#theme-button {
+  border: 1px solid limegreen;
+  border-radius: 20px;
+  background-color: limegreen;
+  width: 100%;
 }
 
 #name {
