@@ -63,15 +63,29 @@ header {
   flex-direction: column;
   justify-content: end;
   position: fixed;
-  bottom: 2em;
+  bottom: 1.5em;
   left: 2em;
 }
 
-#theme-button {
-  border: 1px solid limegreen;
-  border-radius: 20px;
-  background-color: limegreen;
-  width: 100%;
+#theme-button-dark {
+  border: none;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
+}
+
+#theme-button-light {
+  border: none;
+  width: 35px;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  outline: none;
+  display: none;
+  cursor: pointer;
 }
 
 #name {
