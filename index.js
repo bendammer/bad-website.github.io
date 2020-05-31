@@ -6,6 +6,7 @@ const body = document.querySelector('body');
 const darkButton = document.querySelector('#theme-button-dark');
 const lightButton = document.querySelector('#theme-button-light');
 const darkTheme = document.querySelector('.dark');
+const theme = localStorage.getItem('theme');
 
 hasDropdown.forEach((element) => {
   element.addEventListener('click', (event) => {
@@ -29,16 +30,20 @@ exitButton.addEventListener('click', () => {
   dropdown.classList.remove('active');
 });
 
+if (theme) {
+  body.classList.add(theme);
+};
+
 darkButton.addEventListener('click', () => {
   body.classList.add('dark');
+  localStorage.setItem('theme', 'dark');
   darkButton.style.display = 'none';
   lightButton.style.display = 'block';
 });
 
 lightButton.addEventListener('click', () => {
   body.classList.remove('dark');
+  localStorage.setItem('theme', 'light');
   darkButton.style.display = 'block';
   lightButton.style.display = 'none';
 });
-
-
