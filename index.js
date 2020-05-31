@@ -31,7 +31,14 @@ exitButton.addEventListener('click', () => {
 });
 
 if (theme) {
-  body.classList.add(theme);
+  body.classList = theme;
+  if (theme === 'light') {
+    darkButton.style.display = 'block';
+    lightButton.style.display = 'none';
+  } else {
+    darkButton.style.display = 'none';
+    lightButton.style.display = 'block';
+  }
 };
 
 darkButton.addEventListener('click', () => {
