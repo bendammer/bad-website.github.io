@@ -6,6 +6,7 @@ const body = document.querySelector('body');
 const darkButton = document.querySelector('#theme-button-dark');
 const lightButton = document.querySelector('#theme-button-light');
 const darkTheme = document.querySelector('.dark');
+const mobileTheme = document.querySelector('.theme');
 const theme = localStorage.getItem('theme');
 
 hasDropdown.forEach((element) => {
@@ -20,6 +21,7 @@ hamburger.addEventListener('click', () => {
   mobileMenu.style.display = 'flex';
   hamburger.style.display = 'none';
   body.style.overflowY = 'hidden';
+  mobileTheme.style.display = 'block';
 });
 
 exitButton.addEventListener('click', () => {
@@ -28,6 +30,7 @@ exitButton.addEventListener('click', () => {
   body.style.overflowY = 'visible';
   const dropdown = document.querySelector('.dropdown-menu');
   dropdown.classList.remove('active');
+  mobileTheme.style.display = 'none';
 });
 
 if (theme) {

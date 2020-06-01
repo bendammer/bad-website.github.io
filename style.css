@@ -285,9 +285,13 @@ footer a {
   }
 
   .mobile-header {
-    background-color: #A9A9A9;
+    background-color: black;
     height: 80px;
     width: 100%;
+  }
+
+  .dark .mobile-header {
+    background-color: white;
   }
 
   .mobile-nav {
@@ -303,12 +307,24 @@ footer a {
     margin-bottom: 0;
   }
 
+  .name-tag a {
+    color: white;
+  }
+
+  .dark .name-tag a {
+    color: black;
+  }
+
   .line {
     width: 27px;
     height: 4px;
     margin-top: 5px;
-    background-color: black;
+    background-color: white;
     border-radius: 20px;
+  }
+
+  .dark .line {
+    background-color: black;
   }
 
   .line:first-of-type {
@@ -325,8 +341,17 @@ footer a {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #A9A9A9;
-    opacity: .98;
+    background-color: white;
+    opacity: .97;
+    transition: background 600ms ease-in-out, color 1200ms ease-in-out;
+  }
+
+  .dark .mobile-menu {
+    background-color: black;
+  }
+
+  .theme {
+    display: none;
   }
 
   .dropdown-menu.active {
@@ -358,6 +383,18 @@ footer a {
     background-color: black;
     transform-origin: center center;
     border-radius: .3em;
+  }
+
+  .dark .mobile-menu .line {
+    background-color: white;
+  }
+
+  .menu-bar a {
+    color: black;
+  }
+
+  .dark .menu-bar a {
+    color: white;
   }
 
   .x {
@@ -430,7 +467,7 @@ footer a {
   .mobile-header {
     display: flex;
     align-items: center;
-    background-color: #A9A9A9;
+    background-color: black;
     height: 3.5em;
     width: 100%;
   }
@@ -454,7 +491,7 @@ footer a {
     width: 20px;
     height: 3px;
     margin-top: 3px;
-    background-color: black;
+    background-color: white;
     border-radius: 20px;
   }
 
@@ -472,8 +509,16 @@ footer a {
     left: 0;
     height: 100%;
     width: 100%;
-    background-color: #A9A9A9;
+    background-color: white;
     opacity: .98;
+  }
+
+  .dark .mobile-menu {
+    background-color: black;
+  }
+
+  .dark .mobile-menu .line {
+    background-color: white;
   }
 
   .menu-bar li {
