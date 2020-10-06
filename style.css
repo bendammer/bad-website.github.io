@@ -147,11 +147,15 @@ img {
   flex: 4;
 }
 
-.web-dev-pictures {
+.jobs-pictures {
+  display: flex;
+  text-align: center;
   column-count: 2;
   column-gap: .43em;
   padding: 0;
   flex: 4;
+  margin-bottom: 5em;
+  font-size: .9em;
 }
 
 .pictures img {
@@ -161,13 +165,9 @@ img {
 	transition: .3s ease-in-out;
 }
 
-.web-dev-pictures img {
-  width: 420px;
-  height: 300px;
-  border-radius: 15px;
-  border: 1px solid grey;
-  box-shadow: 10px 10px grey;
-  margin-bottom: 5em;
+.jobs-pictures img {
+  max-width: 58%;
+  border-radius: 15px;  
   cursor: pointer;
   opacity: 1;
 	-webkit-transition: .3s ease-in-out;
@@ -277,7 +277,7 @@ footer a {
     column-count: 2;
   }
 
-  .web-dev-pictures {
+  .jobs-pictures {
     column-count: 1;
     display: flex;
     flex-direction: column;
