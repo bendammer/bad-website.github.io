@@ -8,6 +8,8 @@ const lightButton = document.querySelector('#theme-button-light');
 const darkTheme = document.querySelector('.dark');
 const mobileTheme = document.querySelector('.theme');
 const theme = localStorage.getItem('theme');
+const lightbox = document.createElement('div');
+const images = document.querySelectorAll('img:not(.theme)');
 
 hasDropdown.forEach((element) => {
   element.addEventListener('click', (event) => {
@@ -57,3 +59,23 @@ lightButton.addEventListener('click', () => {
   darkButton.style.display = 'block';
   lightButton.style.display = 'none';
 });
+
+lightbox.id = 'lightbox';
+document.body.appendChild(lightbox);
+
+images.forEach(image => {
+  image.addEventListener('click', e => {
+    lightbox.classList.add('active')
+    const img = document.createElement('img')
+    img.src = image.src
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild)
+    }
+    lightbox.appendChild(img)
+  });
+});
+
+lightbox.addEventListener('click', e => {
+  if (e.target !== e.currentTarget) return;
+  lightbox.classList.remove('active');
+})

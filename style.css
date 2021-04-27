@@ -6,7 +6,7 @@ html, body {
 body {
   box-sizing: border-box;
   font-size: 22px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Saira', sans-serif;
   width: 100%;
   padding: 2em 2em 0 2em;
   transition: background 600ms ease-in-out, color 1200ms ease-in-out;
@@ -15,6 +15,7 @@ body {
 a {
   color: #1f1f1f;
   text-decoration: none;
+  font-weight: 400;
 }
 
 a :visited {
@@ -90,7 +91,7 @@ header {
 
 #name {
   font-family: sans-serif;
-  font-weight: lighter;
+  font-weight: 200;
   margin: 0;
 }
 
@@ -149,13 +150,16 @@ img {
 
 .jobs-pictures {
   display: flex;
+  flex-direction: column;
   text-align: center;
-  column-count: 2;
-  column-gap: .43em;
   padding: 0;
   flex: 4;
   margin-bottom: 5em;
   font-size: .9em;
+}
+
+.jobs-pictures img {
+  width: 40%;
 }
 
 .pictures img {
@@ -231,6 +235,32 @@ img:hover {
   margin-top: 0;
 }
 
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox.active img:hover {
+  opacity: 1;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 footer {
   display: flex;
   justify-content: center;
@@ -241,6 +271,24 @@ footer {
 
 footer a {
   margin: 0 2em;
+}
+
+@media screen and (min-width: 2400px) {
+  body {
+    font-size: 38px;
+  }
+}
+
+@media screen and (min-width: 1400px) and (max-width: 2399px) {
+  body {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1399px) {
+  body {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 1281px) {
